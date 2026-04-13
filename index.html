@@ -36,6 +36,7 @@
   nav ul a:hover { color: var(--rose); }
 
   #hero { min-height: 100vh; background: linear-gradient(rgba(61,53,53,0.65), rgba(61,53,53,0.65)), url('hero-bg.jpg') center/cover no-repeat; display: flex; align-items: center; padding: 80px 6vw 60px; gap: 4vw; }
+  #hero2 { min-height: 100vh; background: var(--nav); display: flex; align-items: center; padding: 80px 6vw 60px; }
   .hero-text { flex: 1; }
   .hero-tag { display: inline-block; font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--rose); margin-bottom: 1.2rem; }
   .hero-text h1 { font-family: "DM Serif Display", serif; font-size: clamp(2.4rem, 5vw, 3.8rem); color: var(--page); line-height: 1.15; margin-bottom: 1rem; }
@@ -161,10 +162,22 @@
   </ul>
 </nav>
 
+<!-- SCREEN 1: Name & Title only -->
 <section id="hero">
   <div class="hero-text">
     <span class="hero-tag">Epidemiologist & Public Health Data Analyst</span>
-    <h1>Hi, I'm<br><em>Namrata Chauhan</em></h1>
+    <h1>Hi, I'm <em>Namrata Chauhan</em></h1>
+    <div class="hero-links">
+      <a href="#about" class="btn btn-primary">Learn More</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-photo">...</div>  <!-- keep your existing photo block -->
+</section>
+
+<!-- SCREEN 2: Bio & Pills -->
+<section id="hero2">
+  <div class="hero-text">
     <p>Epidemiologist with a background spanning bench microbiology, statewide public health surveillance, and environmental health research. Based in San Jose, CA, and passionate about using data to improve health outcomes for communities that need it most.</p>
     <div class="hero-pills">
       <span class="hero-pill">Disease Surveillance</span>
@@ -173,15 +186,6 @@
       <span class="hero-pill">SAS · SQL · R · Tableau</span>
       <span class="hero-pill">Infectious Disease</span>
     </div>
-    <div class="hero-links">
-      <a href="#projects" class="btn btn-primary"><i class="fas fa-chart-bar"></i> View My Work</a>
-      <a href="https://linkedin.com/in/namcha1611" target="_blank" class="btn btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="https://github.com/namcha1611" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
-    </div>
-  </div>
-  <div class="hero-photo">
-    <img src="profile.jpg" alt="Namrata Chauhan"
-      onerror="this.outerHTML='<div class=\'hero-photo-placeholder\'><i class=\'fas fa-user-circle\'></i></div>'">
   </div>
 </section>
 
